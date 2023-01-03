@@ -1,0 +1,283 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* XEICON CDN  */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  color: #3c4043;
+  line-height: 1.6em;
+}
+a {
+  text-decoration: none;
+  color: #3c4043;
+}
+
+/* Reset CSS */
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Common CSS */
+.btn-download {
+  background-color: dodgerblue;
+  color: #fff;
+  display: inline-block;
+  width: 180px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-download:hover {
+  background-color: #174ea6;
+}
+section.feature {
+  padding: 50px 0;
+}
+.inner {
+  width: 1250px;
+  margin: auto;
+  overflow: hidden;
+}
+.inner > div {
+  float: left;
+  width: 50%;
+}
+.desc {
+  padding: 0 50px;
+  padding-top: 100px;
+}
+.desc img {}
+.desc h1 {
+  font-size: 42px;
+  line-height: 1.2em;
+}
+.photo img {
+  width: 100%;
+}
+.read-more {
+  color: purple;
+}
+.read-more::after {
+  content: '\e907';
+  font-family: xeicon;
+  margin-left: 5px;
+  display: inline-block;
+  transition: 0.35s;
+}
+.read-more:hover::after {
+  transform: translateX(5px);
+}
+
+
+header {
+  height: 65px;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+}
+.logo {
+  float: left;
+  padding-top: 16px;
+}
+.download {
+  float: right;
+  padding-top: 10px;
+  transform: translateX(200px);
+  /* 다운로드 박스 옆으로 보내서 숨기기 */
+  transition: 0.5s;
+}
+.download.active {
+  transform: translateX(0);
+}
+.welcome {
+  padding-top: 65px;
+  height: 100vh;
+  background: #f8f9fb url(images/hero-back-large-desktop.jpg) no-repeat center center;
+  position: relative;
+}
+.heading {
+  width: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading img {
+  width: 65px;
+}
+.heading h1 {
+  font-size: 52px;
+  line-height: 1.3em;
+}
+.download-content {}
+.download-content span {
+  display: block;
+  font-size: 13px;
+}
+.statics {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.statics a {
+  color: dodgerblue;
+  cursor: pointer;
+}
+.statics a:hover {
+  text-decoration: underline;
+  color: #174ea6;
+}
+.next-section {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.next-section a {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 36px;
+  line-height: 60px;
+}
+.next-section a i {
+  animation: next 1.2s linear infinite;
+}
+@keyframes next {
+  0% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+section.callaction {
+  width: 100%;
+  height: 280px;
+  background: url(images/download-bg-desktop.svg) no-repeat center center;
+  background-color: #508ef1;
+  padding-top: 90px;
+}
+.callaction-inner {
+  text-align: center;
+}
+section.callaction h1 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+section.callaction .btn-download {
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+section.callaction .btn-download:hover {
+  color: #000;
+  background-color: #fff;
+}
+.footer-inner {
+  width: 1250px;
+  margin: auto;
+}
+.sns-outer {
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+.sns {
+  font-size: 20px;
+}
+.sns b {
+  font-weight: normal;
+}
+.sns span a {
+  font-size: 24px;
+}
+.sitemap {
+  padding: 50px 0;
+}
+.link-items {
+  width: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+.link-item {
+  float: left;
+  width: 20%;
+  padding: 10px 20px;
+}
+.link-item-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.link-item-content {
+  padding-top: 20px;
+  line-height: 2.3em;
+}
+.link-item-content a {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+.link-item-content a:hover {
+  color: #000;
+}
+.copyright {
+  padding: 50px 0;
+  border-top: 1px solid #ddd;
+}
+.logo-footer {
+  float: left;
+  transform: translateY(-4px);
+}
+.policy {
+  float: left;
+}
+.policy a {
+  margin: 5px;
+}
+.policy a::after {
+  content: '|';
+  font-size: 14px;
+  padding-left: 15px;
+  color: #ccc;
+}
+.policy a:last-child::after {
+  display: none;
+}
+.language {
+  float: right;
+}
+.language i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.language select {
+  font-size: 16px;
+}
